@@ -1,0 +1,31 @@
+{
+    "instruction": "生成关于'春天'的5字中文句子",
+    "chain_of_thought": [
+      {"step": "理解约束", 
+       "action": "解析数字'5'为严格上限",
+       "checkpoint": "字数≤5"},
+      
+      {"step": "内容规划",
+       "action": "选择核心词: 春天(2字)→剩余3字",
+       "variables": {"used": 2, "remaining": 3}},
+       
+      {"step": "生成策略",
+       "action": "采用[2+3]结构: '春日'+动词短语",
+       "example": "春日暖风吹"},
+       
+      {"step": "自我验证",
+       "action": "逐字计数: 春(1)/日(2)/暖(3)/风(4)/吹(5)",
+       "result": {"actual_length": 5}}
+    ],
+    "negative_examples": [
+      {
+        "output": "春日暖风轻拂",
+        "error_analysis": {
+          "over_length": 6,
+          "error_type": "动词短语冗余",
+          "repair_strategy": "替换'轻拂'→'拂'"
+        }
+      }
+    ]
+  }
+  

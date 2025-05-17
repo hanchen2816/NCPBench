@@ -1,0 +1,98 @@
+{
+    "instruction": "你是一个智能助手，能够根据用户的需求生成内容，请严格遵守用户的要求，包括内容数量、质量、格式等规则，如果出现数字，要完全按照数字字数生成，不要多也不要少一个字。输出格式为一句话。请根据下面要求，生成对应的文段，要求其中除去符号后，汉字的个数必须跟要求的一致:",
+    "input": "请写一个描述春天的句子，限制为5个字。",
+    "output":
+        {
+            "steps": [
+            {
+                "step": 1,
+                "prompt": "你已经写了 0 个字：，现在只能再写 5 个字完成我需要的句子，请生成一个词。",
+                "response": "春",
+                "current_generated_text": "春",
+                "current_length": 1
+            },
+            {
+                "step": 2,
+                "prompt": "你已经写了 1 个字：春，现在只能再写 4 个字完成我需要的句子，请生成一个词。",
+                "response": "天",
+                "current_generated_text": "春天",
+                "current_length": 2
+            },
+            {
+                "step": 3,
+                "prompt": "你已经写了 2 个字：春天，现在只能再写 3 个字完成我需要的句子，请生成一个词。",
+                "response": "绿",
+                "current_generated_text": "春天绿",
+                "current_length": 3
+            },
+            {
+                "step": 4,
+                "prompt": "你已经写了 3 个字：春天绿，现在只能再写 2 个字完成我需要的句子，请生成一个词。",
+                "response": "意",
+                "current_generated_text": "春天绿意",
+                "current_length": 4
+            },
+            {
+                "step": 5,
+                "prompt": "你已经写了 4 个字：春天绿意，现在只能再写 1 个字完成我需要的句子，请生成一个词。",
+                "response": "浓",
+                "current_generated_text": "春天绿意浓",
+                "current_length": 5
+            }
+        ],
+        "final_result": {
+            "generated_sentence": "春天绿意浓",
+            "character_count": 5,
+            "is_correct": true
+        }
+    }
+}
+{
+    "instruction": "你是一个智能助手，能够根据用户的需求生成内容，请严格遵守用户的要求，包括内容数量、质量、格式等规则，如果出现数字，要完全按照数字字数生成，不要多也不要少一个字。输出格式为一句话。请根据下面要求，生成对应的文段，要求其中除去符号后，汉字的个数必须跟要求的一致:",
+    "input": "请写一个描述春天的句子，限制为5个字。",
+    "output":"step[[1]]:prompt为[[你已经写了 0 个字：，现在只能再写 5 个字完成我需要的句子，请生成一个词。]],生成的词为：[[春]],当前句子为[[春]],当前长度为:[[1]]。"
+        {
+            "steps": [
+            {
+                "step": 1,
+                "prompt": "你已经写了 0 个字：，现在只能再写 5 个字完成我需要的句子，请生成一个词。",
+                "response": "春",
+                "current_generated_text": "春",
+                "current_length": 1
+            },
+            {
+                "step": 2,
+                "prompt": "你已经写了 1 个字：春，现在只能再写 4 个字完成我需要的句子，请生成一个词。",
+                "response": "天",
+                "current_generated_text": "春天",
+                "current_length": 2
+            },
+            {
+                "step": 3,
+                "prompt": "你已经写了 2 个字：春天，现在只能再写 3 个字完成我需要的句子，请生成一个词。",
+                "response": "绿",
+                "current_generated_text": "春天绿",
+                "current_length": 3
+            },
+            {
+                "step": 4,
+                "prompt": "你已经写了 3 个字：春天绿，现在只能再写 2 个字完成我需要的句子，请生成一个词。",
+                "response": "意",
+                "current_generated_text": "春天绿意",
+                "current_length": 4
+            },
+            {
+                "step": 5,
+                "prompt": "你已经写了 4 个字：春天绿意，现在只能再写 1 个字完成我需要的句子，请生成一个词。",
+                "response": "浓",
+                "current_generated_text": "春天绿意浓",
+                "current_length": 5
+            }
+        ],
+        "final_result": {
+            "generated_sentence": "春天绿意浓",
+            "character_count": 5,
+            "is_correct": true
+        }
+    }
+}
